@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Curriculo</title>
+    <link rel="stylesheet" href="./css/master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+    <meta name="theme-color" content="rgb(80, 45, 140)">
+  </head>
+  <script type="text/javascript">
+    function troca(n){
+      document.getElementById("op" + n).className="select";
+      for (let i = 1; i < 4; i++){
+        if (i === n){
+            document.getElementById("op" + i).className="select";
+        } else {
+            document.getElementById("op" + i).className="";
+        }
+      }
+      var right = (n - 1) * 100
+      document.getElementById("framesContainer").style.right = `${right}%`
+
+    }
+  </script>
+  <body>
+    <header>
+      <div id="containerHeader">
+        <div id="contentHeaderText">
+          <div id="headerText">
+              <h2>Caroline Scarlet Johnson</h2>
+              <span>Full Stack</span>
+          </div>
+            <img src="./img/ComputerGirl.jpeg" alt="">
+        </div>
+        <div id="imgPerfil">
+          <div></div>
+        </div>
+      </div>
+      <div id="buttonMediaContainer">
+        <a href="audio.html"><img class="icons" src="./img/icons/audioIcon.svg"></img></a>
+        <a href="video.html"><img class="icons" src="./img/icons/videoIcon.svg"></a>
+      </div>
+    </header>
+    <section>
+      <div id="contentSection">
+
+
+        <h3 id="subtittle">Desenvolvedora Full-Stack</h3>
+        <div class="englob-meta">
+
+
+            <div id="aprensentation" class="block">
+              <dt class="subtittle">
+                Sobre mim
+                <div></div>
+              </dt>
+              <dd>Sou uma desenvolvedora de Boston, Massachusetts, graduada pelo MIT em Engenharia de Software(2004), há 9 anos sigo no segmento de desenvimento web como <i>Full-Stack Developer</i> </dd>
+              <table>
+                <tr>
+                  <td><b> <img src="./img/icons/user.svg" width="10px" alt="user"> </b></td>
+                  <td>Caroline Scarlet Johnson</td>
+                </tr>
+                <tr>
+                  <td><b><img src="./img/icons/map2.svg" width="10px" alt="user"></b></td>
+                  <td>Back Bay,Boston,MA 02105</td>
+                </tr>
+                <tr>
+                  <td><b><img src="./img/icons/birth.svg" width="10px" alt="user"></b></td>
+                  <td>34 anos</td>
+                </tr>
+              </table>
+            </div>
+            <div id="skills" class="block">
+              <dt class="subtittle">
+                Skills
+                <div></div>
+              </dt>
+              <dd>
+                Habilidades Web
+              </dd>
+              <nav id="navigationSkills">
+                <li class="select" id="op1" onclick="troca(1)">FrontEnd</li>
+                <li class="" id="op2" onclick="troca(2)">BackEnd</li>
+                <li class="" id="op3" onclick="troca(3)">Profissional</li>
+              </nav>
+              <div id="framesContainer">
+
+                <ul class="frames" id="frame1">
+                  <li> <div class="iconsSkills" style="background-image: url('./img/iconsSkills/js.png');"></div><div class="barrel"><div class="barrelContent" style="width: 90%;"></div></div><span class="tooltip">Java Script </span></li>
+                  <li> <div class="iconsSkills" style="background-image: url('./img/iconsSkills/html5.png');"></div><div class="barrel"><div class="barrelContent" style="width: 100%;"></div></div><span class="tooltip">HTML5 </span></li>
+                  <li> <div class="iconsSkills" style="background-image: url('./img/iconsSkills/css.png');"></div><div class="barrel"><div class="barrelContent" style="width: 100%;"></div></div><span class="tooltip">CSS3 </span></li>
+                  <li> <div class="iconsSkills" style="background-image: url('./img/iconsSkills/react.png');"></div><div class="barrel"><div class="barrelContent" style="width: 85%;"></div></div><span class="tooltip">React </span></li>
+                  <li> <div class="iconsSkills" style="background-image: url('./img/iconsSkills/reactNative.png');"></div><div class="barrel"><div class="barrelContent" style="width: 83%;"></div></div><span class="tooltip">React Native </span></li>
+                  <li> <div class="iconsSkills" style="background-image: url('./img/iconsSkills/ts.png');"></div><div class="barrel"><div class="barrelContent" style="width: 89%;"></div></div><span class="tooltip">TypeScript</span></li>
+                </ul>
+                <ul class="frames" id="frame2">
+                  <li> <div class="iconsSkills" style="background-image: url('./img/iconsSkills/php.png');"></div><div class="barrel"><div class="barrelContent" style="width: 92%;"></div></div><span class="tooltip">PHP</span></li>
+                  <li> <div class="iconsSkills" style="background-image: url('./img/iconsSkills/laravel.png');"></div><div class="barrel"><div class="barrelContent" style="width: 91%;"></div></div><span class="tooltip">Laravel</span></li>
+                  <li> <div class="iconsSkills" style="background-image: url('./img/iconsSkills/node.png');"></div><div class="barrel"><div class="barrelContent" style="width: 90%;"></div></div><span class="tooltip">Node</span></li>
+                  <li> <div class="iconsSkills" style="background-image: url('./img/iconsSkills/mysql.png');"></div><div class="barrel"><div class="barrelContent" style="width: 81%;"></div></div><span class="tooltip">MySQL</span></li>
+                  <li> <div class="iconsSkills" style="background-image: url('./img/iconsSkills/mongodb.png');"></div><div class="barrel"><div class="barrelContent" style="width: 84%;"></div></div><span class="tooltip">MongoDB</span></li>
+                  <li> <div class="iconsSkills" style="background-image: url('./img/iconsSkills/postgredb.png');"></div><div class="barrel"><div class="barrelContent" style="width: 90%;"></div></div><span class="tooltip">PostgreSQL</span></li>
+
+                </ul>
+                <ul class="frames" id="frame3">
+                  <li><img src="./img/iconsSkills/svg/comunication.svg"></img>Comunicação</li>
+                  <li><img src="./img/iconsSkills/svg/leader.svg"></img>Liderança</li>
+                  <li><img src="./img/iconsSkills/svg/relationship.svg"></img>Relacionamento Interpessoal</li>
+                  <li><img src="./img/iconsSkills/svg/networking.svg"></img>Networking</li>
+
+                </ul>
+              </div>
+
+          </div>
+        </div>
+        <div id="objetive" class="block">
+          <dt class="subtittle">
+            Objetivo
+            <div></div>
+          </dt>
+          <dd>
+              O meu objetivo na empresa é de subir de cargo com o passar dos anos, agregando minhas experiências profissionais que obtive trabalhando em outros locais como o IBM, CIA e FBI e pelo meu amplo conhecimento em diversas linguagens de programação que contribuiria muito com o crescimento da empresa.
+          </dd>
+        </div>
+        <div id="experiences" class="block">
+          <dt class="subtittle">
+            Experiências
+            <div></div>
+          </dt>
+          <div class="cardsContainer">
+            <div class="cards">
+              <div class="img" style="background-image: url('./img/fbi.jpg');"></div>
+              <div class="resumo">
+                <p>Analista de Sistemas<p>
+                <p>2 anos<p>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="img" style="background-image: url('./img/ibm.png');"></div>
+              <div class="resumo">
+                <p>Estágio<p>
+                <p>4 anos<p>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="img" style="background-image: url('./img/cia.png');"></div>
+              <div class="resumo">
+                <p>CTO<p>
+                <p>1 ano<p>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="img" style="background-image: url('./img/foto.jpg');"></div>
+              <div class="resumo">
+                <p>Estágio<p>
+                <p>4 anos<p>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="img" style="background-image: url('./img/ComputerGirl.jpeg');"></div>
+              <div class="resumo">
+                <p>Estágio<p>
+                <p>2 anos<p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy <small>Caroline Scarlet Johnson 2020</small></p>
+    </footer>
+  </body>
+</html>

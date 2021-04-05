@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+  </head>
+  <script type="text/javascript">
+    setTimeout(() => document.getElementById("arrowBack").style.display = "flex", 2000);
+  </script>
+  <style media="screen">
+    body {
+      background: rgb(80, 45, 140);
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+    }
+    #video {
+      width:70vw;
+      height: 50vw;
+      max-width: 500px;
+      max-height: 400px;
+      min-height: 300px;
+      min-width: 400px;
+    }
+    #arrowBack {
+      cursor: pointer;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top:10px;
+      left:10px;
+    }
+    #arrow {
+      width: 0px;
+      animation: displayBack 1s ease-in forwards;
+    }
+    @keyframes displayBack {
+      from {
+        transform: rotate(0deg);
+        width: 0px;
+      }
+      to {
+        transform: rotate(720deg);
+        width: 20px;
+      }
+    }
+  </style>
+  <body>
+    <a href="index.html" id="arrowBack"> <img id="arrow" src="./img/icons/leftSolid.svg" alt=""> </a>
+    <video src="./video/video.mp4" id="video" controls preload="metadata">
+      Seu browser não suporta o video.
+    </video>
+  </body>
+</html>
